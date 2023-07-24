@@ -1,0 +1,136 @@
+Compound_name,y_test,y_pred
+sulfamethizole,4.348351648,3.752483
+sulfathiazole,2.728571429,3.752483
+sulfacetamide,1.331868132,3.752483
+sulfaguanidine,0.442391304,3.752483
+sulfaquinoxaline,19.30326087,6.662793
+sulfamethoxazole,6.345652174,3.752483
+testosterone,15.95913978,11.798214
+prednisone,3.193548387,8.665232
+estrone,33.35698925,15.666639
+exemestane,11.53723404,12.027082
+17-alpha-hydroxyprogesterone acetate,19.41595745,12.411222
+cortisone,3.185106383,8.726219
+betamethasone,7.075531915,8.726219
+dehydroepiandrosterone,19.3,12.411222
+corticosterone,4.681914894,8.726219
+norethisterone,16.71382979,11.798214
+progesterone,29.96382979,14.1652155
+pyridine,3.085106383,3.752483
+methyl benzoate,2.666666667,3.752483
+nitrocyclohexane,1.905208333,4.530698
+anisole,2.066666667,3.752483
+benzamide,0.952083333,3.752483
+cumene,7.367708333,7.9927177
+2-4-dichlorophenol,11.84583333,7.96224
+nandrolone,10.375,11.737558
+mesterolone,30.30208333,14.1652155
+Androsta-1-4-dien-3-one- 17beta-hydroxy-17-methyl-,12.55208333,11.798214
+purpurin,22.71875,6.6360226
+ketoprofen,30.03125,13.956237
+naproxen,30.40625,13.810479
+ibuprofen,31.625,11.765182
+aspirin,6.354166667,4.3654833
+ethisterone,12.35416667,11.798214
+testosterone cypionate,30.46875,17.495487
+testosterone isocaproate,45.0,17.495487
+testosterone undecanoate,36.32291667,17.495487
+propylparaben,11.88421053,4.0225325
+benzene,1.694736842,3.752483
+toluene,2.894736842,3.752483
+1-cloro-4-nitrobenzene,3.526315789,4.9383507
+naphthalene,10.81052632,7.0409603
+2-ethoxybenzoic acid,4.947368421,3.752483
+3-(2-furyl)acrylic acid,4.473684211,3.752483
+phthalide,1.463157895,3.752483
+diphenylmethanol,5.589473684,8.008861
+m-cresol,2.652631579,3.752483
+p-benzoquinone,1.357894737,3.752483
+catechol,1.252631579,3.752483
+3-4-dihydroxy benzoic acid,4.884210526,3.752483
+benzyl alcohol,0.821052632,3.752483
+3-(5-methylfuran-2-yl)-propionic acid,2.642105263,4.6193905
+syringic acid,4.894736842,3.8340688
+alpha-resorcylic acid,9.126315789,3.752483
+pyrogallol,0.968421053,3.752483
+acetophenone,1.791666667,3.752483
+propiophenone,2.9375,3.7686262
+butyrophenone,4.635416667,4.6511545
+valerophenone,7.854166667,8.02649
+hexanophenone,14.34375,8.233233
+4-tert-butylphenol,9.072916667,7.9927177
+2-7-dihydroxy naphthalene,12.88541667,4.3558283
+1-2-4-trimethyl benzene,7.614583333,7.9927177
+gibberellic acid,1.65625,7.8595514
+4-Phenyl-1-3-Dioxane,1.40625,3.7686262
+vanillic acid,4.71875,3.752483
+benzoin methyl ether,5.96875,8.129624
+diphenyl carbonate,9.75,8.700488
+trans-2-hexenyl acetate,2.25,4.6193905
+4-tert-butylbenzoic acid,35.4375,15.660792
+BHA (3-tert-Butyl-4-hydroxyanisole),13.58333333,11.370928
+butyl phenyl ether,8.947916667,7.9173985
+toluic acid,6.729166667,3.752483
+equiline,31.66666667,15.727297
+Sebuthylazine,6.3125,7.941969
+aldicarb,1.010416667,3.752483
+indole-3-butyric acid,11.4375,7.06308
+ATRAZIN-DESETHYL-2-HYDROXY,1.520833333,4.0063915
+mecoprop-P,45.85416667,10.800528
+cyanazin,4.9375,4.3414936
+ISOPROTURON,4.729166667,6.5287437
+metamitron,0.78125,3.752483
+terbutylazine,9.5625,6.9756756
+linuron,10.71875,5.5279627
+alachlor,5.135416667,9.042697
+1-3-butanediol diacrylate,1.541666667,5.7348146
+nortriptyline,2.458333333,9.12131
+3-4-dichloro aniline,3.645833333,4.3863354
+5-7-dimethoxycoumarin,5.453608247,3.752483
+trans-ferulic acid,2.948453608,5.374749
+formononetin,0.886597938,5.225173
+Rutin Hydrate,9.773195876,7.3031225
+(+)-catechin hydrate,5.690721649,4.928355
+pentoxifylline,0.927835052,4.717119
+naringin,7.81443299,10.569563
+(-)-epicatechin,6.288659794,4.928355
+(+)-catechin,9.680412371,4.928355
+tert-butylhydroquinone,10.07216495,6.9903355
+propyl gallate,10.37113402,4.2887697
+folinic acid sodium salt,11.04123711,9.595872
+riboflavin,0.505154639,6.038414
+L-(+)-ascorbic acid,0.381443299,3.8762193
+hydrochloridethiazide,4.505154639,3.752483
+5-5-diphenylhydantoin,16.92783505,6.667901
+antipyrine,1.847826087,3.752483
+acetaminophen,0.979381443,3.752483
+isoeugenol,6.381443299,4.3253508
+eugenol,4.010309278,3.752483
+(+)-carvone,2.845360825,3.8131404
+geraniol,4.639175258,7.680031
+o-methylanisole,3.371134021,3.752483
+cinnamaldehyde,2.845360825,3.752483
+cinnamyl alcohol,2.275510204,3.752483
+diethyl phthalate,3.918367347,3.8502126
+isopropyl isocyanate,0.757575758,3.752483
+methylparaben,3.363636364,3.752483
+butylparaben,19.56565657,8.6370325
+cefamandole,33.05102041,10.048221
+myclobutanil,12.58762887,11.298368
+fmoc chloride,0.288659794,10.322759
+(+)-griseofulvin,9.37755102,6.6116095
+hippuric acid,5.581632653,4.9994345
+3-nitrophenol,3.360824742,4.3654833
+dansyl chloride,6.826530612,8.074302
+abiraterone,2.826530612,11.756063
+estriol,12.51020408,11.689121
+chlorambucil,24.94897959,13.85904
+2-hydroxypyridine,0.336734694,3.752483
+piroxicam,4.673469388,6.483902
+methyl-p-toluene sulfonate,3.278350515,3.752483
+tropolone,2.908163265,3.752483
+tropic acid,1.96969697,4.407633
+PyBOP,3.252525253,6.1669855
+p-toluenesulfonyl isocyanate,1.643564356,3.752483
+rifampicin,9.0,9.324075
+thiamethoxam,0.826530612,4.3253508

@@ -1,0 +1,29 @@
+Compound_name,y_test,y_pred
+ketoprofen,30.03125,13.154756
+butylparaben,19.56565657,9.171317
+indole-3-butyric acid,11.4375,4.380599
+tert-butylhydroquinone,10.07216495,4.380599
+(+)-catechin,9.680412371,4.9415493
+rifampicin,9.0,4.9415493
+valerophenone,7.854166667,4.9483323
+toluic acid,6.729166667,4.380599
+sulfamethoxazole,6.345652174,4.9415493
+ethylparaben,5.693877551,5.41411
+hippuric acid,5.581632653,10.39142
+hydrochloridethiazide,4.505154639,7.2622013
+sulfamethizole,4.348351648,4.380599
+4-(dimethylamino)benzoic acid,3.469387755,4.400599
+trans-ferulic acid,2.948453608,7.2063756
+tropolone,2.908163265,4.400599
+abiraterone,2.826530612,5.41411
+m-cresol,2.652631579,4.380599
+cinnamyl alcohol,2.275510204,4.380599
+trans-2-hexenyl acetate,2.25,4.380599
+anisole,2.066666667,4.380599
+sulfadiazine,1.530769231,4.9415493
+phthalide,1.463157895,4.380599
+4-Phenyl-1-3-Dioxane,1.40625,14.893301
+sulfacetamide,1.331868132,5.129571
+pentoxifylline,0.927835052,7.1639314
+thiamethoxam,0.826530612,4.9415493
+metamitron,0.78125,4.380599

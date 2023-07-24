@@ -1,0 +1,9 @@
+cd 'dir'     to go to a folder
+cd ..        to go back from a folder
+cls          to clean screen
+
+ctr+c        to cancel or exit program
+dir          to see the files of the directory where you are
+python paco.py    to run a program (you have to be in the dir of the program)
+
+pip install library 

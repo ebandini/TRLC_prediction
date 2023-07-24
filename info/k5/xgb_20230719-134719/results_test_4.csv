@@ -1,0 +1,28 @@
+Compound_name,y_test,y_pred
+bisphenol A,14.26315789,10.445783
+mecoprop-P,0.0,10.700244
+4-tert-butylbenzoic acid,17.53052632,11.408571
+naproxen,32.76923077,4.717732
+BHA (3-tert-Butyl-4-hydroxyanisole),5.368421053,4.2974467
+Androsta-1-4-dien-3-one- 17beta-hydroxy-17-methyl-,4.351648352,6.306546
+ethisterone,4.791208791,5.4711967
+exemestane,5.857142857,4.1424203
+linuron,10.25,10.150633
+4-tert-butylphenol,3.726315789,5.949848
+betamethasone,2.984615385,3.0701127
+diphenylmethanol,3.968421053,3.5751867
+5-7-dimethoxycoumarin,5.758241758,4.920803
+carbamazepine,8.436170213,5.1159716
+2-ethoxybenzoic acid,7.968421053,2.97366
+3-4-dihydroxy benzoic acid,4.168421053,2.8079484
+1-cloro-4-nitrobenzene,4.526315789,4.5409536
+propiophenone,2.978947368,4.605251
+(+)-carvone,3.946236559,4.3492785
+sulfathiazole,2.989130435,5.0414095
+camphor,1.720430108,3.629777
+vanillin,2.258064516,2.46977
+tropic acid,2.115789474,5.55144
+antipyrine,6.298969072,3.8805652
+sulfamerazine,0.985869565,3.1631582
+benzyl alcohol,0.642105263,3.6088884
+thymine,0.234042553,2.196389
