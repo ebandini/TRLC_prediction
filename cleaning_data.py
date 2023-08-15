@@ -3,7 +3,13 @@ import numpy as np
 from sklearn import preprocessing
 import re
 
-def load_data(path: str) -> tuple:
+def load_data(path: str, n_descriptors=0) -> tuple:
+    """
+    This function takes in a path to a folder containing the files 'descriptors230306.csv' and 'prediction230306.csv', 
+    and an optional n_descriptors value.
+    It reads the two files into dataframes, drops unnecessary columns, and merges the two dataframes into a single dataframe.
+    It then returns the descriptors dataframe, the experimental dataset dataframe, the merged dataframe, and a list of molecules.
+    """
     # Read the file with SMILES and descriptors
     descriptors_path = path + 'descriptors230306.csv'
     df_descriptors = pd.read_csv(descriptors_path, encoding='unicode_escape', sep=',')
@@ -25,23 +31,24 @@ def load_data(path: str) -> tuple:
     # Merge the two dataframes into a single dataframe
     df = pd.concat([df_mydata, df_descriptors], axis=1)
 
-    # Remove compounds 
-    comp = ['PyBOP', 'p-toluenesulfonyl isocyanate', 'dansyl chloride', 'isopropyl isocyanate', 'fmoc chloride', 
-            'testosterone undecanoate', 'testosterone isocaproate', 'testosterone cypionate', '(+)-catechin hydrate', 
-            'methyl-p-toluene sulfonate', 'geraniol', 'chlorambucil'] 
-    for i in comp:
-        df = df[df['Compound_name'] != i]
-        
-    for i in comp:
-        df_mydata = df_mydata[df_mydata['Compound_name'] != i]
-
     # Create a list of molecules
     molecules = df_mydata['Compound_name']
 
     # Remove the column 'Compound_name' from every dataframe
     df = df.drop(['Compound_name'], axis=1)
     df_mydata = df_mydata.drop(['Compound_name'], axis=1)
-    
+
+    if n_descriptors != 0:
+        # Take only important MDs
+        MDS_path = path + 'final_features_45_noreactive.csv'
+        # Read the csv file in MDS_path only the first column without header
+        MDS = pd.read_csv(MDS_path, encoding='unicode_escape', sep=';', header=None, usecols=[0])
+        # Convert the first column to a list, take the first n elements
+        MDS = MDS[0].tolist()[:n_descriptors]
+        # From df_descriptors and df take only the columns in MDS
+        df_descriptors = df_descriptors[MDS]
+        df = df[MDS]
+
     # Return the descriptors dataframe, mydata dataframe, merged dataframe, and the list of molecules
     return df_descriptors, df_mydata, df, molecules
 
@@ -98,9 +105,15 @@ def correlation_descriptors(df_descriptors: pd.DataFrame, df_mydata: pd.DataFram
     return df_descriptors, df
 
 
-def get_data(path, pred, no_pred_1, no_pred_2):
+def get_data(path, pred, no_pred_1, no_pred_2, n_descriptors):
+    """
+    This function takes in a path to a folder containing the files 'descriptors230306.csv' and 'prediction230306.csv',
+    and the names of the predictor and response variables.
+    It reads the two files into dataframes, drops unnecessary columns, and merges the two dataframes into a single dataframe.
+    It then returns the descriptors dataframe, the experimental dataset dataframe, the merged dataframe, and a list of molecules.
+    """
     # Load the data
-    df_descriptors, df_mydata, df, molecules = load_data(path)
+    df_descriptors, df_mydata, df, molecules = load_data(path, n_descriptors=n_descriptors)
 
     # variance in the MDs
     df_descriptors, df = variance(df_descriptors, df_mydata, threshold_var=0.01)
@@ -124,3 +137,24 @@ def get_data(path, pred, no_pred_1, no_pred_2):
     x = x.loc[:, ~x.columns.duplicated()]
 
     return df, x, y, df_descriptors, molecules
+
+def split(total, ratio, pred):
+    """
+    This function takes in a dataframe, a ratio value, and the name of the predictor variable.
+    It shuffles the dataframe, splits it into training and testing sets, and splits the predictor and response variables.
+    It then returns the training and testing sets, and the predictor and response variables for both sets.
+    """
+    # Shuffle the dataset
+    total = total.sample(frac=1)
+    # Calculate the number of rows for training
+    n_train = int(len(total) * ratio)
+    # Split the dataset into training and testing sets
+    train = total[:n_train]
+    test = total[n_train:]
+    # Split the predictor and response variables
+    x_train = train[pred]
+    y_train = train.drop(pred, axis=1)
+    x_test = test[pred]
+    y_test = test.drop(pred, axis=1)
+    # Return the six values
+    return train, test, x_train, x_test, y_train, y_test
